@@ -32,6 +32,8 @@ Java에서 업로드된 파일의 MimeType을 체크하는 유틸리티
 1. <pre>Mimetype을 체크합니다. 업로드된 파일의 Mimetype만 체크하기 때문에 속도가 빠릅니다. 
 	단, 라이브러리의 용량이 큽니다.</pre>
 
+---
+
 <pre>
 import io.github.seccoding.web.mimetype.ExtensionFilterFactory;
 import io.github.seccoding.web.mimetype.ExtFilter;
