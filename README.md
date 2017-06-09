@@ -26,11 +26,11 @@ Java에서 업로드된 파일의 MimeType을 체크하는 유틸리티
 1. COMPARE_EXTENSION
 1. <pre>단순히 확장자만 체크합니다. Mimetype은 체크하지 않습니다.</pre>
 1. JMIME_MAGIC
-1. <pre>Mimetype을 체크합니다. 업로드된 파일의 Byte를 모두 읽어 처리하기 때문에 속도가 느립니다.
-단, 라이브러리의 용량이 작습니다.</pre>
+1. <pre>Mimetype을 체크합니다. 업로드된 파일의 Byte를 모두 읽어 처리하기 때문에 속도가 느립니다. 
+	단, 라이브러리의 용량이 작습니다.</pre>
 1. APACHE_TIKA
-1. <pre>Mimetype을 체크합니다. 업로드된 파일의 Mimetype만 체크하기 때문에 속도가 빠릅니다.
-단, 라이브러리의 용량이 큽니다.</pre>
+1. <pre>Mimetype을 체크합니다. 업로드된 파일의 Mimetype만 체크하기 때문에 속도가 빠릅니다. 
+	단, 라이브러리의 용량이 큽니다.</pre>
 
 <pre>
 import io.github.seccoding.web.mimetype.ExtensionFilterFactory;
