@@ -2,9 +2,12 @@
 Java에서 업로드된 파일의 MimeType을 체크하는 유틸리티
 
 ## 사용 방법
-### maven dependency에 MimeTypeChecker-1.1.0.jar 파일을 추가할 경우
+### MimeTypeChecker-1.1.0.jar를 다운받아 클래스패스에 추가.
+1. Dependency가 모두 포함된 파일입니다.
+
+### maven dependency에 MimeTypeChecker-1.1.0-without-dependencies.jar 파일을 추가할 경우
 1. MimeTypeChecker-1.1.0.jar파일을 C:\에 복사합니다.
-1. Maven 명령어를 이용해 .m2 Repository 에 MimeTypeChecker-1.1.0.jar 를 설치(저장)합니다.<pre>mvn install:install-file -Dfile=C:\MimeTypeChecker-1.1.0.jar -DgroupId=io.github.seccoding -DartifactId=MimeTypeChecker -Dversion=1.1.0 -Dpackaging=jar</pre>
+1. Maven 명령어를 이용해 .m2 Repository 에 MimeTypeChecker-1.1.0-without-dependencies.jar 를 설치(저장)합니다.<pre>mvn install:install-file -Dfile=C:\MimeTypeChecker-1.1.0-without-dependencies.jar -DgroupId=io.github.seccoding -DartifactId=MimeTypeChecker -Dversion=1.1.0 -Dpackaging=jar</pre>
 1. 본인의 Project/pom.xml 에 dependency를 추가합니다.<pre>
 	&lt;dependency&gt;
 	&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;io.github.seccoding&lt;/groupId&gt;
