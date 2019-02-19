@@ -33,24 +33,26 @@ Java에서 업로드된 파일의 MimeType을 체크하는 유틸리티
 ---
 
 <pre>
-import io.github.seccoding.web.mimetype.ExtensionFilterFactory;
 import io.github.seccoding.web.mimetype.ExtFilter;
+import io.github.seccoding.web.mimetype.ExtensionFilter;
+import io.github.seccoding.web.mimetype.ExtensionFilterFactory;
+import io.github.seccoding.web.mimetype.MimeType;
 
 public class ExtensionFilterTest {
 
 	public static void main(String[] args) {
 		
 		ExtensionFilter filter = ExtensionFilterFactory.getFilter(ExtFilter.COMPARE_EXTENSION);
-		boolean isWrite = filter.doFilter("D:\\해썸\\HAESOME_160114.pdf", "pdf");
-		System.out.println(isWrite);
+		boolean isPdfFile = filter.doFilter("File.pdf", "pdf");
+		System.out.println(isPdfFile);
 		
 		filter = ExtensionFilterFactory.getFilter(ExtFilter.JMIME_MAGIC);
-		isWrite = filter.doFilter("D:\\해썸\\HAESOME_160114.pdf", "application/pdf");
-		System.out.println(isWrite);
+		isPdfFile = filter.doFilter("File.pdf", MimeType.PDF);
+		System.out.println(isPdfFile);
 		
 		filter = ExtensionFilterFactory.getFilter(ExtFilter.APACHE_TIKA);
-		isWrite = filter.doFilter("D:\\해썸\\HAESOME_160114.pdf", "application/pdf");
-		System.out.println(isWrite);
+		isPdfFile = filter.doFilter("File.pdf", MimeType.PDF);
+		System.out.println(isPdfFile);
 	}
 	
 }
