@@ -2,7 +2,7 @@ package io.github.seccoding.web.mimetype;
 
 import java.io.File;
 
-class CompareExtensionFilter extends ExtensionFilter {
+public class CompareExtensionFilter extends ExtensionFilter {
 
 	@Override
 	protected String getMimeType(File currentFile) {

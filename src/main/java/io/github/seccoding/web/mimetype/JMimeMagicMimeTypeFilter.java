@@ -12,7 +12,7 @@ import net.sf.jmimemagic.MagicMatch;
 import net.sf.jmimemagic.MagicMatchNotFoundException;
 import net.sf.jmimemagic.MagicParseException;
 
-class JMimeMagicMimeTypeFilter extends ExtensionFilter {
+public class JMimeMagicMimeTypeFilter extends ExtensionFilter {
 
 	@Override
 	protected String getMimeType(File currentFile) {
@@ -23,7 +23,9 @@ class JMimeMagicMimeTypeFilter extends ExtensionFilter {
 			byte[] data = Files.readAllBytes(path);
 			MagicMatch match = Magic.getMagicMatch(data);
 			mimeType = match.getMimeType();
-		} catch (MagicParseException | MagicMatchNotFoundException | MagicException | IOException e) {}
+		} catch (MagicParseException | MagicMatchNotFoundException | MagicException | IOException e) {
+			throw new RuntimeException(e.getMessage(), e);
+		}
 
 		return mimeType;
 	}

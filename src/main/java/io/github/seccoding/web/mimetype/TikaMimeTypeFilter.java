@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import org.apache.tika.Tika;
 
-class TikaMimeTypeFilter extends ExtensionFilter {
+public class TikaMimeTypeFilter extends ExtensionFilter {
 
 	@Override
 	protected String getMimeType(File currentFile) {
@@ -13,7 +13,9 @@ class TikaMimeTypeFilter extends ExtensionFilter {
 	    try {
 	    	Tika tika = new Tika();
 			mimeType = tika.detect(currentFile);
-		} catch (IOException e) {}
+		} catch (IOException e) {
+			throw new RuntimeException(e.getMessage(), e);
+		}
 
 		return mimeType;
 	}
