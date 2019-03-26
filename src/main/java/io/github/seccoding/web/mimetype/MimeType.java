@@ -47,6 +47,7 @@ public interface MimeType {
 	public static final String OGX = "application/ogg";
 	public static final String PDF = "application/pdf";
 	public static final String PPT = "application/vnd.ms-powerpoint";
+	public static final String PNG = "image/png";
 	public static final String RAR = "application/x-rar-compressed";
 	public static final String RTF = "application/rtf";
 	public static final String SH = "application/x-sh";
@@ -75,7 +76,7 @@ public interface MimeType {
 	public static final String DOTM = "application/vnd.ms-word.template.macroEnabled.12";
 	public static final String XLT = "application/vnd.ms-excel";
 	public static final String XLA = "application/vnd.ms-excel";
-	public static final String XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+	public static final String XLSX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
 	public static final String XLTX = "application/vnd.openxmlformats-officedocument.spreadsheetml.template";
 	public static final String XLSM = "application/vnd.ms-excel.sheet.macroEnabled.12";
 	public static final String XLTM = "application/vnd.ms-excel.template.macroEnabled.12";
