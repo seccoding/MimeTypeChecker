@@ -76,8 +76,7 @@ public interface MimeType {
 	public static final String DOTM = "application/vnd.ms-word.template.macroEnabled.12";
 	public static final String XLT = "application/vnd.ms-excel";
 	public static final String XLA = "application/vnd.ms-excel";
-//	public static final String XLSX = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-	public static final String XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+	public static final String[] XLSX = {"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"};
 	public static final String XLTX = "application/vnd.openxmlformats-officedocument.spreadsheetml.template";
 	public static final String XLSM = "application/vnd.ms-excel.sheet.macroEnabled.12";
 	public static final String XLTM = "application/vnd.ms-excel.template.macroEnabled.12";

@@ -1,6 +1,8 @@
-package io.github.seccoding.web.mimetype;
+package io.github.seccoding.web.mimetype.impl;
 
 import java.io.File;
+
+import io.github.seccoding.web.mimetype.abst.ExtensionFilter;
 
 public class CompareExtensionFilter extends ExtensionFilter {
 

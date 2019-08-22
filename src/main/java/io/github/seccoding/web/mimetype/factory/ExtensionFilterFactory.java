@@ -1,4 +1,10 @@
-package io.github.seccoding.web.mimetype;
+package io.github.seccoding.web.mimetype.factory;
+
+import io.github.seccoding.web.mimetype.ExtFilter;
+import io.github.seccoding.web.mimetype.abst.ExtensionFilter;
+import io.github.seccoding.web.mimetype.impl.CompareExtensionFilter;
+import io.github.seccoding.web.mimetype.impl.JMimeMagicMimeTypeFilter;
+import io.github.seccoding.web.mimetype.impl.TikaMimeTypeFilter;
 
 public class ExtensionFilterFactory {
 

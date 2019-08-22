@@ -1,9 +1,9 @@
 package io.github.seccoding.web.mimetype;
 
 import io.github.seccoding.web.mimetype.ExtFilter;
-import io.github.seccoding.web.mimetype.ExtensionFilter;
-import io.github.seccoding.web.mimetype.ExtensionFilterFactory;
 import io.github.seccoding.web.mimetype.MimeType;
+import io.github.seccoding.web.mimetype.abst.ExtensionFilter;
+import io.github.seccoding.web.mimetype.factory.ExtensionFilterFactory;
 
 public class ExtensionFilterTest {
 

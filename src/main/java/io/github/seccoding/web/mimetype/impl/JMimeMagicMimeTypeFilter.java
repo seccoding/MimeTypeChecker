@@ -1,4 +1,4 @@
-package io.github.seccoding.web.mimetype;
+package io.github.seccoding.web.mimetype.impl;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,6 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import io.github.seccoding.web.mimetype.abst.ExtensionFilter;
 import net.sf.jmimemagic.Magic;
 import net.sf.jmimemagic.MagicException;
 import net.sf.jmimemagic.MagicMatch;
@@ -17,7 +21,7 @@ public class JMimeMagicMimeTypeFilter extends ExtensionFilter {
 	@Override
 	protected String getMimeType(File currentFile) {
 		String mimeType = null;
-
+		
 		try {
 			Path path = Paths.get(currentFile.getAbsolutePath());
 			byte[] data = Files.readAllBytes(path);

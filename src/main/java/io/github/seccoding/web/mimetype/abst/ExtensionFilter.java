@@ -1,4 +1,4 @@
-package io.github.seccoding.web.mimetype;
+package io.github.seccoding.web.mimetype.abst;
 
 import java.io.File;
 
@@ -8,7 +8,7 @@ public abstract class ExtensionFilter {
 		
 		File currentFile = new File(filePath);
 		String mimeType = getMimeType(currentFile);
-		
+		System.out.println(mimeType);
 		for (String extension : validExtensions) {
 			if ( isEquals(mimeType, extension) ) {
 				return true;

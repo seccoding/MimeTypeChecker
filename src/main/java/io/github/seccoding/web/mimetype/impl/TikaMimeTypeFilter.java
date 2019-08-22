@@ -1,9 +1,11 @@
-package io.github.seccoding.web.mimetype;
+package io.github.seccoding.web.mimetype.impl;
 
 import java.io.File;
 import java.io.IOException;
 
 import org.apache.tika.Tika;
+
+import io.github.seccoding.web.mimetype.abst.ExtensionFilter;
 
 public class TikaMimeTypeFilter extends ExtensionFilter {
 
